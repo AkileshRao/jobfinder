@@ -1,0 +1,56 @@
+.auth{
+  background: #fbf5b4;
+  height: 100vh;
+
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    .section-left,.section-right{
+      width: 50%;
+      font-family: 'Poppins', sans-serif;
+    }
+    .section-left{
+      padding-left: 10em;
+      h1{
+        font-size: 3.5em;
+      }
+      p{
+        font-size: 2em;
+        color: #ffc801;
+        font-weight: 500;
+        span{
+          font-weight: 700;
+          color: black;
+        }
+      }
+      .user-email{
+        display: flex;
+        align-items: center;
+        input{
+          min-width: 350px;
+          padding: 1.5em;
+          border: 0;
+          border-radius: 10px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.2em;
+        }
+        button{
+          border-radius: 10px;
+          padding: 0.8em;
+          border: 0;
+          margin-left: 0.5em;
+          font-size: 1.5em;
+          background: #ffc801;
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif;
+          display:flex;
+        }
+      }
+    }
+    .section-right{
+      img{
+        width: 40em;
+        border-radius: 5000px 3000px 4000px 2000px;
+      }
+    }
+  }
