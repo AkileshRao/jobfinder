@@ -1,56 +1,92 @@
 .auth{
   background: #fbf5b4;
   height: 100vh;
-
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    .section-left,.section-right{
-      width: 50%;
-      font-family: 'Poppins', sans-serif;
-    }
-    .section-left{
-      padding-left: 10em;
-      h1{
-        font-size: 3.5em;
-      }
-      p{
-        font-size: 2em;
-        color: #ffc801;
-        font-weight: 500;
-        span{
-          font-weight: 700;
-          color: black;
+  display: flex;
+  flex-direction: column;
+    .container{
+      width: 80%;
+      margin: 0 auto;
+      .header{
+        margin-bottom: 5em;
+        h1{
+          font-weight: bold;
+          font-family: 'Poppins', sans-serif;
+          cursor: pointer;
+          span{
+            color: #ffc801;
+          }
         }
       }
-      .user-email{
+      .body{
         display: flex;
         align-items: center;
-        input{
-          min-width: 350px;
-          padding: 1.5em;
-          border: 0;
-          border-radius: 10px;
+        justify-content: space-evenly;
+        .section-left,.section-right{
           font-family: 'Poppins', sans-serif;
-          font-size: 1.2em;
         }
         button{
           border-radius: 10px;
-          padding: 0.8em;
+          padding: 0.6em;
           border: 0;
-          margin-left: 0.5em;
-          font-size: 1.5em;
           background: #ffc801;
+          font-size: 1.5em;
           font-weight: 700;
           font-family: 'Poppins', sans-serif;
           display:flex;
+          align-items: center;
+          justify-content: space-evenly;
+          margin:0 0.5em;
+          min-width: 150px;
+          cursor: pointer;
+          &:first-child{
+            margin-left:0px;
+          }
         }
+        .section-left{
+          width: 50%;
+          h1{
+            font-size: 3.5em;
+            margin: 0;
+          }
+          h2{
+            font-size: 3em;
+            margin: 0.8em 0;
+          }
+          p{
+            font-size: 1.5em;
+            color: #ffc801;
+            font-weight: 500;
+            span{
+              font-weight: 700;
+              color: black;
+              cursor: pointer;
+            }
+          }
+          .user-auth-trigger{
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+          }
+
+          .auth-body{
+            input{
+              min-width: 450px;
+              padding: 1.5em;
+              border: 0;
+              border-radius: 10px;
+              font-family: 'Poppins', sans-serif;
+              font-size: 1.2em;
+              margin: 0.5em 0;
+            }
+          }
+        }
+        .section-right{
+          width: 40%;
+          img{
+            width: 40em;
+            border-radius: 5000px 3000px 4000px 2000px;
+          }
       }
-    }
-    .section-right{
-      img{
-        width: 40em;
-        border-radius: 5000px 3000px 4000px 2000px;
       }
     }
   }
